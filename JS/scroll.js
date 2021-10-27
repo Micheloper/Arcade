@@ -1,35 +1,35 @@
 
 //Definir el "container" e el div y estabelecer el primero hijo
-let containerElmID = "#fullpage-scroll-container";
+var containerElmID = "#fullpage-scroll-container";
 $(containerElmID + ' .fullpage-scroll-element:first-child ').addClass("active-page");
 
 
 //Construir navegación
-let navStart = '<ul id="fullpage-scroll-navigation">';
+var navStart = '<ul id="fullpage-scroll-navigation">';
 
-let navCount = '';
+var navCount = '';
 $(containerElmID + ' .fullpage-scroll-element').each(function(index){
-    if ( index == 0 ){ let activeClass = 'active-nav'}else{ let activeClass = '' }
-    let href = $(this).attr("id");
-    let li = '<li><a href="#' + href + '" class="' + activeClass + '"></a></li>';
+    if ( index == 0 ){ var activeClass = 'active-nav'}else{ var activeClass = '' }
+    var href = $(this).attr("id");
+    var li = '<li><a href="#' + href + '" class="' + activeClass + '"></a></li>';
     navCount += (li);
 
 });
 
-let navEnd = '</ul">';
+var navEnd = '</ul">';
 
 $("body").append(navStart + navCount + navEnd);
 
 //FullPage Scroll js
-let isHandlingScroll = 0;
+var isHandlingScroll = 0;
 
 document.addEventListener("wheel", function (e) {
 	
-  let direction;
+  var direction;
   if ( Math.sign(e.deltaY) == 1 ){
-        let direction = 1;
+        var direction = 1;
       }else if( Math.sign(e.deltaY) == -1 ){
-        let direction = 0;
+        var direction = 0;
       }
   
   if ( isHandlingScroll == 0 && ( e.deltaY >= 10 || e.deltaY <= -10) ){
@@ -57,7 +57,7 @@ document.addEventListener("wheel", function (e) {
 
 
 $("#fullpage-scroll-navigation li").click(function(e){
-  let destination = $(this).find('a').attr('href');
+  var destination = $(this).find('a').attr('href');
   pageTransition('undefined', destination);
   e.preventDefault();
 });
@@ -78,14 +78,14 @@ function pageTransition(direction, destination){
 		    	return;
 		    }
 		    
-		    let destination = '#' + $(".active-page").closest('.fullpage-scroll-element').prev().attr('id');
+		    var destination = '#' + $(".active-page").closest('.fullpage-scroll-element').prev().attr('id');
 		    
 		}else{
 			if ( !$('.active-page').next().hasClass('fullpage-scroll-element') ){
 		        return;
 		    }
       
-			let destination = '#' + $(".active-page").closest('.fullpage-scroll-element').next().attr('id');
+			var destination = '#' + $(".active-page").closest('.fullpage-scroll-element').next().attr('id');
 		}
 	}
 	
@@ -93,9 +93,9 @@ function pageTransition(direction, destination){
 	    
 	    if( $(".active-page").index() > $(destination).index() ){
 		    
-		     let direction = 0;
+		     var direction = 0;
 		  }else{
-			   let direction = 1;
+			   var direction = 1;
 		  }
 	   
 	}
