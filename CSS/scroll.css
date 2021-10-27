@@ -1,0 +1,185 @@
+
+  /*---FullPage Scroll CSS---*/
+  
+  #fullpage-scroll-navigation{
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    z-index: 0;
+    padding: 0px;
+    margin: 0;
+    width: 0px;
+    height: 100vh;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    opacity: 0;
+    animation: navFadeIn 1s  ease-in-out;
+      animation-fill-mode: forwards;
+  }
+  
+  @keyframes navFadeIn {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  #fullpage-scroll-navigation li{
+    margin: 4px 0;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  #fullpage-scroll-navigation li a{
+    width: 4px;
+    height: 4px;
+    outline: 8px solid rgba(255,255,255,0);
+    border-radius: 10px;
+    background: #fff;
+    display: inline-block;
+    z-index: 100;transition-property: transform ;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+    cursor: pointer;
+  }
+  
+  #fullpage-scroll-navigation li a.active-nav,
+  #fullpage-scroll-navigation li:hover a{
+    transition-property: transform ;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+    transform: scale(2.6);
+  }
+  
+  #fullpage-scroll-container{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    background: radial-gradient(#333, #222);
+  }
+  
+  .fullpage-scroll-element{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0;
+  }
+  
+  .active-page,
+  .move-in-direction-0,
+  move-in-direction-1{
+    z-index: 1;
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+  }
+  
+  .move-out-direction-0,
+  .move-out-direction-1{
+    z-index: 0;
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+  }
+  
+  /*Add your custom animation effects here*/
+  
+  .move-out-direction-1{
+    animation: outUp 0.2s  ease-in-out;
+      animation-fill-mode: forwards;
+    transform: scale(1);
+  }
+  
+  @keyframes outUp{
+          0%{
+              transform: scale(1);
+          }
+          100%{
+              transform: scale(0.6);
+          }
+      }
+  
+  .move-in-direction-1{
+    animation: inUp 0.4s  ease-in-out;
+      animation-fill-mode: forwards;
+  }
+  
+  @keyframes inUp{
+          0%{
+              transform: translateY(100%);
+          }
+          100%{
+              transform: translateY(0%);
+          }
+      }
+  
+  .move-out-direction-0{
+    animation: outDown 0.2s  ease-in-out;
+      animation-fill-mode: forwards;
+    transform: translateY(0%);
+    z-index: 1;
+  }
+  
+  @keyframes outDown{
+          0%{
+              transform: translateY(0%);
+          }
+          100%{
+              transform: translateY(100%);
+          }
+      }
+  
+  .move-in-direction-0{
+    animation: inDown 0.4s  ease-in-out;
+      animation-fill-mode: forwards;
+    transform: scale(0.6);
+    z-index: 0;
+  }
+  
+  @keyframes inDown{
+          0%{
+              transform: scale(0.6);
+          }
+          100%{
+              transform: scale(1);
+          }
+      }
+  
+  
+  /*-- Styling for demo --*/
+  
+  h1{
+      color: #fff;
+      font-family: rockwell, serif;
+      font-size: 28px;
+      width: 80%;
+      text-align: center;
+  }
+  
+  .fullpage-scroll-element p{
+    color: #fff;
+    font-family: rockwell, serif;
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .fullpage-scroll-element ul{
+    list-style: none;
+    color: #fff;
+    font-family: rockwell, serif;
+    font-weight: 100;
+  }
