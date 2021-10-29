@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $("section").each(function () {
       let $section = $(this);
-  
       $section
         .on("click", function () {
           if (!$section.data("open")) {
@@ -19,6 +18,3 @@ $(document).ready(function () {
         });
     });
   });
-  
-
-  
