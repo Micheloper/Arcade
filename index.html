@@ -41,17 +41,37 @@
 <!--******************************************-->    
     <div class="container">
         <div class="main">
-          <section>
-            <div class="in-box">
-              <h2>HOME</h2>
-            </div>
-            <div class="details">
-              <p>page 1 Today we’d like to share an experimental responsive layout with you. Initially, the layout shows four flexible boxes. When clicking on a box, it will expand to fullscreen and the others will scale down and fade out. When closing the current view, it will move back to the intial position while the other boxes come back up again. Another type of page transition can be seen on the works section where we will show a portfolio item by sliding in a panel from the bottom. The current view gets scaled down and disappears in the back</p>
-              
-          
-            </div>
-            <span class="button">X</span>
-          </section>
+<!----------------------1--------------------------->
+<section>
+  <div class="in-box">
+    <h2>Tic-Tac-Toe</h2>
+  </div>
+  <div class="details">
+   
+<!--Pantalla final para exibir la mensaje al jugador-->
+<div id="pantalla"></div>
+<!-- DIV PARA TABLERO-->
+<h1>TIC-TAC-TOE</h1>
+<div class="container__JUEGO1">
+<div class="grid">
+ <!--DAR UN ID PARA CADA CELULA-->
+ <div class="celula" id="0"></div>
+ <div class="celula" id="1"></div>
+ <div class="celula" id="2"></div>
+ <div class="celula" id="3"></div>
+ <div class="celula" id="4"></div>
+ <div class="celula" id="5"></div>
+ <div class="celula" id="6"></div>
+ <div class="celula" id="7"></div>
+ <div class="celula" id="8"></div>
+</div>
+</div>
+    
+
+  </div>
+  <span class="button">X</span>
+</section>
+<!----------------------2--------------------------->
           <section>
             <div class="in-box">
               <h2>WORK</h2>
@@ -61,6 +81,7 @@
             </div>
             <span class="button">X</span>
           </section>
+<!----------------------3--------------------------->
           <section>
             <div class="in-box">
               <h2>BLOG</h2>
@@ -70,6 +91,7 @@
             </div>
             <span class="button">X</span>
           </section>
+<!----------------------4--------------------------->
           <section>
             <div class="in-box">
               <h2>CONTACT</h2>
@@ -79,10 +101,12 @@
             </div>
             <span class="button">X</span>
           </section>
+<!-------------------------------------------------->
         </div>
       </div>
 <!--******************************************-->
         </section>
+        <!--  
         <section id="three" class="fullpage-scroll-element">
           <p>The animations is held in CSS to seperate the presentation from the logic...<br><br>To change the animation you can alter the two pair of classes at the bottom of the CSS:</p>
           <ul>
@@ -92,7 +116,7 @@
             <li>.move-out-direction-0</li>
             <li>.move-in-direction-0</li>
         </section>
-        
+         -->
       </div>
       
       
@@ -102,4 +126,5 @@
 <script src="./JS/jquery-3.6.0.min.js"></script>
 <script src="./JS/scroll.js"></script>
 <script src="./JS/ventanas.js"></script>
+<script src="./JS/juegos.js"></script>
 </html>
