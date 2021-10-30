@@ -260,7 +260,18 @@
   justify-content: center;
 }
 #Ttt-game{
-  width: 100%;
+width: 100%;
 height: 100%;
 }
   /*--------- ↑↑↑↑↑↑ TIC-TOC-TOE ↑↑↑↑↑↑ ---------*/
+  #EA-game iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+  #EA-game{
+  width: 100%;
+  height: 100%;
+  }

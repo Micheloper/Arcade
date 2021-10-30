@@ -5,7 +5,8 @@ $(document).ready(function () {
 
     const frame = document.getElementById("Ttt-game");
     frame.hidden = true;
-
+    const frame2 = document.getElementById("EA-game");
+    frame2.hidden = true;
       $section
         .on("click", function () {
           if (!$section.data("open")) {
@@ -13,6 +14,7 @@ $(document).ready(function () {
             $(".main").addClass("close");
             $section.addClass("expand");
             frame.hidden = false;
+            frame2.hidden = false;
           }
         })
         .find("span.button")
@@ -22,6 +24,7 @@ $(document).ready(function () {
           $(".main").removeClass("close");
           $section.removeClass("expand");
           frame.hidden = true;
+          frame2.hidden = true;
         });
     });
   });
