@@ -7,6 +7,9 @@ $(document).ready(function () {
     frame.hidden = true;
     const frame2 = document.getElementById("EA-game");
     frame2.hidden = true;
+    const frame3 = document.getElementById("RPS-game");
+    frame3.hidden = true;
+
       $section
         .on("click", function () {
           if (!$section.data("open")) {
@@ -15,6 +18,7 @@ $(document).ready(function () {
             $section.addClass("expand");
             frame.hidden = false;
             frame2.hidden = false;
+            frame3.hidden = false;
           }
         })
         .find("span.button")
@@ -25,6 +29,7 @@ $(document).ready(function () {
           $section.removeClass("expand");
           frame.hidden = true;
           frame2.hidden = true;
+          frame3.hidden = true;
         });
     });
   });
