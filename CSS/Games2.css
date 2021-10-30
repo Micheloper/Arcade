@@ -1,13 +1,4 @@
 
-  footer{
-    text-align: center;
-    padding: 10px;
-}
-
-footer a{
-    color: black;
-    text-decoration: none;
-}
 
 button{
     background-color: #ffe97d;
@@ -39,7 +30,7 @@ h1{
 }
 
 #result img{
-    width: 40%;
+    width: 30%;
 }
 
 #start-text{
@@ -54,4 +45,30 @@ h1{
 
 #group-btn > button > img{
     width: 100%;
+}
+
+
+.container2 {
+  width:800px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+}
+
+
+#my_canvas{ 
+  background:#000000; 
+  border:#000 1px solid; 
+}
+.boton{
+    color:red;
+    font-size: 40px;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 8px;
+    border:2px solid blue;
+}
+.boton:hover{
+    background-color: white;
+    color: #000000;
 }

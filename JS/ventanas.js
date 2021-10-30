@@ -9,7 +9,8 @@ $(document).ready(function () {
     frame2.hidden = true;
     const frame3 = document.getElementById("RPS-game");
     frame3.hidden = true;
-
+    const frame4 = document.getElementById("SS-game");
+    frame4.hidden = true;
       $section
         .on("click", function () {
           if (!$section.data("open")) {
@@ -19,6 +20,7 @@ $(document).ready(function () {
             frame.hidden = false;
             frame2.hidden = false;
             frame3.hidden = false;
+            frame4.hidden = false;
           }
         })
         .find("span.button")
@@ -30,6 +32,18 @@ $(document).ready(function () {
           frame.hidden = true;
           frame2.hidden = true;
           frame3.hidden = true;
+          frame4.hidden = true;
         });
     });
   });
+
+  
+$('.list-item').on('click', function() {
+  $(this).toggleClass('is-checked');
+});
+
+jQuery(document).ready(function($) {
+  $('pre').each(function(index, el){
+    $(this).text( $(this).html() );
+  });
+});
