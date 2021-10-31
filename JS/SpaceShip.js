@@ -115,6 +115,8 @@ function initCanvas(){
                 ctx.fillText('You win!', cW * .5 - 80, 50);
             }
         }
+        var puntos;
+        var puntos = 0;
         // Detectar impacto de bullet (bala)
         this.hitDetect = function (m, mi) {
             console.log('crush');
@@ -125,8 +127,9 @@ function initCanvas(){
                    m.y >= e.y && 
                    m.y <= e.y+e.h){
                     this.misiles.splice(this.misiles[mi],1); // Remove the missile
-                    enemies.splice(i, 1); // Remove the enemy that the missile hit
-                    document.querySelector('.barra').innerHTML = "Destroyed "+ e.id+ " ";
+                    enemies.splice(i, 1)
+                   puntos += 5;; // Remove the enemy that the missile hit
+                    document.querySelector('.barra').innerHTML = "Puntuacion "+puntos+ " ";
                 }
             }
         }

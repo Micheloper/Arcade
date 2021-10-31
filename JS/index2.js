@@ -7,7 +7,7 @@ if( playerName == null ) {
 //-------------------------------------
 const player = {
     nombre: playerName,
-    puntos: 97
+    puntos: 0
 }
 
 const playerJSON = JSON.stringify(player);
@@ -18,7 +18,6 @@ let playerGet = localStorage.getItem("player0");
 
 const player2 = JSON.parse(playerGet);
 
-console.log(player2); console.log(player2.nombre); console.log(player2.puntos);
 
 //-------------------------------------
 

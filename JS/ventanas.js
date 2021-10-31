@@ -42,8 +42,3 @@ $('.list-item').on('click', function() {
   $(this).toggleClass('is-checked');
 });
 
-jQuery(document).ready(function($) {
-  $('pre').each(function(index, el){
-    $(this).text( $(this).html() );
-  });
-});
