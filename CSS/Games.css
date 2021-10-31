@@ -48,7 +48,13 @@
   /*--------- ↑↑↑↑↑↑ TIC-TOC-TOE ↑↑↑↑↑↑ ---------*/
   
   /*--------- ↓↓↓↓↓↓  El Ahorcado ↓↓↓↓↓↓ ---------*/
-  
+#forca{
+  height: 400px;
+  color: white;
+}
+#palabra{
+  color: white;
+}
 .flex-container-1 {
   display: flex;
   justify-content: center;
@@ -87,7 +93,7 @@ p {
 i {
   display: flex;
   justify-content: center;
-  border-bottom: 3px solid #DC1F27;
+  border-bottom: 3px solid #ffffff;
   width: 40px;
   margin: 5px;
   padding-bottom: 10px;

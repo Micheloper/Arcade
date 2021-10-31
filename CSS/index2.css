@@ -10,7 +10,7 @@
   /*--------- ↓↓↓↓↓↓  PLACAR DE PUNTOS ↓↓↓↓↓↓ ---------*/
   .puntos{  
     display: flex;
-    margin: 20px;
+    margin: 60px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
@@ -19,28 +19,27 @@
   .puntos__1{
       font-size: 40px;
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
   }
   .puntos__2{
       font-size: 40px;
       text-align: center;
-       margin-bottom: 20px;
+       margin-bottom: 50px;
   }
   .puntos__3{
       font-size: 40px;
       text-align: center;
-       margin-bottom: 20px;
+       margin-bottom: 50px;
   }
   .puntos__4{
       font-size: 40px;
       text-align: center;
-       margin-bottom: 20px;
+       margin-bottom: 50px;
   }
   .container0{
     background: rgba( 255, 255, 255, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
       width: 30%;
@@ -179,22 +178,30 @@
 
   }
   section:nth-child(1) {
-    background: url(../low-poly-grid-haikei\ \(1\).svg);
+    background: url(../IMG/bg\ -\ page\ 2\ \(4\).svg);
+    background-size: cover;
+    background-position: center;
     top: 0;
     left: 0;
   }
   section:nth-child(2) {
-    background-color: #2ecc71;
+    background: url(../IMG/bg\ -\ page\ 2\ \(2\).svg);
+    background-size: cover;
+    background-position: center;
     top: 0;
     right: 0;
   }
   section:nth-child(3) {
-    background-color: #e67e22;
+    background: url(../IMG/bg\ -\ page\ 2\ \(3\).svg);
+    background-size: cover;
+    background-position: center;
     bottom: 0;
     left: 0;
   }
   section:nth-child(4) {
-    background-color: #f1c40f;
+    background: url(../IMG/bg\ -\ page\ 2\ \(1\).svg);
+    background-size: cover;
+    background-position: center;
     bottom: 0;
     right: 0;
   }
@@ -247,6 +254,7 @@
   .expand .button {
     opacity: 1;
     transition: opacity 0.2s linear 0.5s;
+    color: white;
   }
   .details p {
     margin: 20px;

@@ -192,7 +192,7 @@ function escolheLetra(letra) {
 //Si el usuario se equivoca la letra entra en esa condicion
     if (acertou === false) { 
         imagem++;
-        document.getElementById("forca").src = "../IMG/ElAhorcado/forca-"+imagem+".jpg"; // concatenacion de la img 
+        document.getElementById("forca").src = "../IMG/ElAhorcado/forca-"+imagem+".svg"; // concatenacion de la img 
 
         var botao = document.getElementById(letra);
         botao.setAttribute('class', 'errada');
